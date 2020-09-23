@@ -11,4 +11,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'asvetliakov/vim-easymotion'
     Plug 'machakann/vim-highlightedyank'
   else
+
+  endif
 call plug#end()

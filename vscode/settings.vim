@@ -107,18 +107,12 @@ xnoremap <silent> <C-h> :call VSCodeNotify('workbench.action.navigateLeft')<CR>
 nnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
 xnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
 
-nnoremap <silent> <C-H> :call VSCodeNotify('workbench.action.moveEditorToLeftGroup')<CR>
-xnoremap <silent> <C-H> :call VSCodeNotify('workbench.action.moveEditorToLeftGroup')<CR>
-nnoremap <silent> <C-L> :call VSCodeNotify('workbench.action.moveEditorToRightGroup')<CR>
-xnoremap <silent> <C-L> :call VSCodeNotify('workbench.action.moveEditorToRightGroup')<CR>
-nnoremap <silent> <J> :call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>
-xnoremap <silent> <J> :call VSCodeNotify('workbench.action.previousEditorInGroup')<CR>
-nnoremap <silent> <K> :call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>
-xnoremap <silent> <K> :call VSCodeNotify('workbench.action.nextEditorInGroup')<CR>
-nnoremap <silent> <leader><r> :call VSCodeNotify('workbench.action.splitEditorRight')<CR>
-xnoremap <silent> <leader><r> :call VSCodeNotify('workbench.action.splitEditorRight')<CR>
-nnoremap <silent> <leader><s> :call VSCodeNotify('workbench.action.splitEditorDown')<CR>
-xnoremap <silent> <leader><s> :call VSCodeNotify('workbench.action.splitEditorDown')<CR>
+" Left + right tab movement
+nnoremap <silent> <K> :call VSCodeNotify('workbench.action.nextEditor')<CR>
+xnoremap <silent> <K> :call VSCodeNotify('workbench.action.nextEditor')<CR>
+nnoremap <silent> <J> :call VSCodeNotify('workbench.action.previousEditor')<CR>
+xnoremap <silent> <J> :call VSCodeNotify('workbench.action.previousEditor')<CR>
+
 nnoremap <silent> <f> :call VSCodeNotify('extension.jumpy-word')<CR>
 xnoremap <silent> <f> :call VSCodeNotify('extension.jumpy-word')<CR>
 nnoremap <silent> <F> :call VSCodeNotify('extension.jumpy-line')<CR>
