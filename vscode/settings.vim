@@ -108,17 +108,25 @@ nnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
 xnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
 
 " Left + right tab movement
-nnoremap <silent> <K> :call VSCodeNotify('workbench.action.nextEditor')<CR>
-xnoremap <silent> <K> :call VSCodeNotify('workbench.action.nextEditor')<CR>
-nnoremap <silent> <J> :call VSCodeNotify('workbench.action.previousEditor')<CR>
-xnoremap <silent> <J> :call VSCodeNotify('workbench.action.previousEditor')<CR>
+nnoremap <silent> K :call VSCodeNotify('workbench.action.nextEditor')<CR>
+xnoremap <silent> K :call VSCodeNotify('workbench.action.nextEditor')<CR>
+nnoremap <silent> J :call VSCodeNotify('workbench.action.previousEditor')<CR>
+xnoremap <silent> J :call VSCodeNotify('workbench.action.previousEditor')<CR>
+" folding
+nmap <silent> zc :call VSCodeNotify('editor.fold')<CR>
+xmap <silent> zc :call VSCodeNotify('editor.fold')<CR>
+nmap <silent> zC :call VSCodeNotify('editor.unfoldAll')<CR>
+xmap <silent> zC :call VSCodeNotify('editor.unfoldAll')<CR>
+nmap <silent> zo :call VSCodeNotify('editor.unfold')<CR>
+xmap <silent> zo :call VSCodeNotify('editor.unfold')<CR>
+nmap <silent> zO :call VSCodeNotify('editor.unfoldAll')<CR>
+xmap <silent> zO :call VSCodeNotify('editor.unfoldAll')<CR>
 
-nnoremap <silent> <f> :call VSCodeNotify('extension.jumpy-word')<CR>
-xnoremap <silent> <f> :call VSCodeNotify('extension.jumpy-word')<CR>
-nnoremap <silent> <F> :call VSCodeNotify('extension.jumpy-line')<CR>
-xnoremap <silent> <F> :call VSCodeNotify('extension.jumpy-line')<CR>
-nnoremap <silent> <X> :call VSCodeNotify('extension.jumpy-exit')<CR>
-xnoremap <silent> <X> :call VSCodeNotify('extension.jumpy-exit')<CR>
+" documentation
+
+nnoremap <silent> gp :call VSCodeNotify('editor.action.showHover')<CR>
+xnoremap <silent> gp :call VSCodeNotify('editor.action.showHover')<CR>
+
 
 " Bind C-/ to vscode commentary since calling from vscode produces double comments due to multiple cursors
 xnoremap <expr> <C-/> <SID>vscodeCommentary()
