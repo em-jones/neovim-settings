@@ -27,6 +27,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   else
 
   endif
+  " Vim spotify integration
+  Plug 'HendrikPetertje/vimify'
 call plug#end()
 
 
